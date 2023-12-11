@@ -24,7 +24,7 @@ void HelpMessage(char **argv)
     if (argv[1] != NULL) {
         if (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0) {
             cout << "This is a ChatBot integrated in your teminal.\n \
-                You need a OpenAI API Key in order to use this tool.\n \
+                You need an OpenAI API Key in order to use this tool.\n \
                 Please set your OpenAI API Key as an env variable.\n \
                 Example: export OPENAI_API_KEY=\"sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"" << endl;
             cout << "If you want to customize the LLM launch the tool like this: \n \
