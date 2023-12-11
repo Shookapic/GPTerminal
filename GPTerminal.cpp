@@ -24,14 +24,14 @@ void HelpMessage(char **argv)
     if (argv[1] != NULL) {
         if (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0) {
             cout << "This is a ChatBot integrated in your teminal.\n \
-                You need a OpenAI API Key in order to use this tool.\n \
+                You need an OpenAI API Key in order to use this tool.\n \
                 Please set your OpenAI API Key as an env variable.\n \
                 Example: export OPENAI_API_KEY=\"sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"" << endl;
             cout << "If you want to customize the LLM launch the tool like this: \n \
-                ./GPTerminal -m gpt-4 -t 0.7 -ctx 280\n \
+                ./GPTerminal -m gpt-4 -t 0.7 -ctx 280 -p 'Act like a 9 years old child'\n \
                 -m: Change the model, by default it's 'gpt-3.5-turbo'\n \
                 -t: Change the temperature of the LLM (float value from 0 to 1) 0 gives strict responses, 1 gives creative responses. Default is 0.7\n \
-                -p: Change the pre-premopt for example 'You will answer to every question like a drunk man of 25 years old'\n \
+                -p: Change the pre-premopt for example 'You will answer to every question like a drunk 25 years old man'\n \
                 -ctx: Change the context size (number of tokens). Basically it's the size of the response. Default is 500."<< endl;
             exit(0);
         }
